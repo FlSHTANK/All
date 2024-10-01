@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e0e7ff; /* เปลี่ยนพื้นหลังให้ดูสดใสขึ้น */
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px; /* เพิ่มความโค้งมน */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* ทำให้เงาดูดีขึ้น */
+    text-align: center;
+    transition: transform 0.2s; /* เพิ่มการเคลื่อนไหวเมื่อ hover */
+}
+
+.container:hover {
+    transform: scale(1.02); /* ขยายเล็กน้อยเมื่อเอาเมาส์ไปวาง */
+}
+
+select {
+    padding: 12px;
+    width: 85%; /* เพิ่มขนาดของ select box */
+    margin: 15px 0;
+    border: 1px solid #d1d5db; /* เพิ่มขอบ */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #4f46e5; /* เปลี่ยนสีขอบเมื่อ focus */
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #4f46e5; /* เปลี่ยนสีพื้นหลัง */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #3730a3; /* เปลี่ยนสีเมื่อ hover */
+    transform: translateY(-2px); /* ยกขึ้นเล็กน้อยเมื่อ hover */
+}
+
+.weather-info {
+    margin-top: 20px;
+    font-size: 1.2em; /* ขนาดตัวอักษรใหญ่ขึ้น */
+    color: #374151; /* เปลี่ยนสีตัวอักษร */
+}
